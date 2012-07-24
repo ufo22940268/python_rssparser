@@ -3,13 +3,13 @@ from xml.dom import Node
 from download import downloader
 
 url = "http://cn.engadget.com/rss.xml"
-#dom = parse(downloader(url).download())
-dom = parse("rss.xml")
+dom = parse(downloader(url).download())
+#dom = parse("rss.xml")
 titles = []
 body = []
 for item in dom.getElementsByTagName("item"):
     for t in item.childNodes:
-        if t.nodeName == "title" or t.nodeName == "description":
+        if t.nodeName == "title":
             
             #print t.childNodes[0].data
             #TODO Althougth is can prevent the convert error happens, but

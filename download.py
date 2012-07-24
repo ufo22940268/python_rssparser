@@ -10,11 +10,11 @@ class downloader:
         outFile = self.getOutFile()
         byte = inStream.read(1024)
         while byte != "":
-            print byte
             outFile.write(byte)
             byte = inStream.read()
+        fileName = outFile.name
         outFile.close()
-        return outFile
+        return fileName
 
     def getOutFile(self):
         return open(self.parseFileName(), "w")
