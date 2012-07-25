@@ -35,22 +35,34 @@ def main():
     dom = gen_dom()
     list = []
     for item in dom.getElementsByTagName("item"):
-        b = bean()
-        for t in item.childNodes:
-            item_data = get_item_data(t)
-            if t.nodeName == "pubDate":
-                b.date = converttime.convert(item_data)
-            elif t.nodeName == "title":
-                b.title = item_data
-            elif t.nodeName == "guid":
-                b.guid = hash(item_data)
-                print b.guid
-        list.append(b)
+        if not contains_in_db(parse_guid(item)):
+            b = bean()
+            for t in item.childNodes:
+                item_data = get_item_data(t)
+                if t.nodeName == "pubDate":
+                    b.date = converttime.convert(item_data)
+                elif t.nodeName == "title":
+                    b.title = item_data
+                elif t.nodeName == "guid":
+                    b.guid = hash(item_data)
+            list.append(b)
     insert_to_db(list);
 
     #test
     testutils.print_data()
 
+def parse_guid(item):
+    return hash(get_item_data(item.getElementsByTagName("guid")[0]))
+    
+
+def contains_in_db(guid):
+    conn = dbutils.connect()
+    c = conn.cursor()
+    c.execute("select * from data where hash_guid = '%s'" % guid);
+    if c.fetchall() == []:
+        return False
+    else:
+        return True
 
 class bean:
     date = 0
