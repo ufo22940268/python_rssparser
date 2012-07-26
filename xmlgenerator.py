@@ -8,9 +8,9 @@ def query(date):
     return c
 
 def load_single_bean(row):
-    print row
     b = bean()
     b.title = row[1]
+    return b
 
 def load_beans(date):
     beans = []
@@ -19,7 +19,7 @@ def load_beans(date):
     while row != None:
         beans.append(load_single_bean(row))
         row = c.fetchone()
-    return beans
+    return "".join(map(str, beans))
 
 if __name__ == '__main__':
     print load_beans(0)

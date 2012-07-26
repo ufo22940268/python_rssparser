@@ -19,7 +19,7 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_VERSION	5.8	//
 $<	Session.vim	/^vnoremap $< `>a -->`<i<!-- $/;"	m
 $$	Session.vim	/^vnoremap $$ `>a"`<i"$/;"	m
 $/	Session.vim	/^vnoremap $\/ `>a*\/`<i\/*$/;"	m
@@ -105,7 +105,6 @@ $w	Session.vim	/^vnoremap $w `>a"`<i"$/;"	m
 ,y	Session.vim	/^map ,y :YRShow$/;"	m
 ,z	Session.vim	/^map ,z <Plug>ZoomWin$/;"	m
 0	Session.vim	/^map 0 ^$/;"	m
-0	Session.vim	/^normal! 0$/;"	m
 <F11>	Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
 <F2>	Session.vim	/^map <F2> :NERDTreeToggle$/;"	m
 <F3>	Session.vim	/^map <F3> :Tlist$/;"	m
@@ -127,14 +126,6 @@ $w	Session.vim	/^vnoremap $w `>a"`<i"$/;"	m
 <Nul>i	Session.vim	/^nmap <Nul>i :scs find i ^=expand("<cfile>")$/;"	m
 <Nul>s	Session.vim	/^nmap <Nul>s :scs find s =expand("<cword>")$/;"	m
 <Nul>t	Session.vim	/^nmap <Nul>t :scs find t =expand("<cword>")$/;"	m
-<Plug>CVSEdit	Session.vim	/^nnoremap <silent> <Plug>CVSEdit :CVSEdit$/;"	m
-<Plug>CVSEditors	Session.vim	/^nnoremap <silent> <Plug>CVSEditors :CVSEditors$/;"	m
-<Plug>CVSUnedit	Session.vim	/^nnoremap <silent> <Plug>CVSUnedit :CVSUnedit$/;"	m
-<Plug>CVSWatchAdd	Session.vim	/^nnoremap <silent> <Plug>CVSWatchAdd :CVSWatch add$/;"	m
-<Plug>CVSWatchOff	Session.vim	/^nnoremap <silent> <Plug>CVSWatchOff :CVSWatch off$/;"	m
-<Plug>CVSWatchOn	Session.vim	/^nnoremap <silent> <Plug>CVSWatchOn :CVSWatch on$/;"	m
-<Plug>CVSWatchRemove	Session.vim	/^nnoremap <silent> <Plug>CVSWatchRemove :CVSWatch remove$/;"	m
-<Plug>CVSWatchers	Session.vim	/^nnoremap <silent> <Plug>CVSWatchers :CVSWatchers$/;"	m
 <Plug>CalendarH	Session.vim	/^nnoremap <silent> <Plug>CalendarH :cal Calendar(1)$/;"	m
 <Plug>CalendarV	Session.vim	/^nnoremap <silent> <Plug>CalendarV :cal Calendar(0)$/;"	m
 <Plug>NetrwBrowseX	Session.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)$/;"	m
@@ -156,52 +147,83 @@ $w	Session.vim	/^vnoremap $w `>a"`<i"$/;"	m
 <Plug>VCSUpdate	Session.vim	/^nnoremap <silent> <Plug>VCSUpdate :VCSUpdate$/;"	m
 <Plug>VCSVimDiff	Session.vim	/^nnoremap <silent> <Plug>VCSVimDiff :VCSVimDiff$/;"	m
 <S-Tab>	Session.vim	/^inoremap <silent> <S-Tab> =BackwardsSnippet()$/;"	m
+DateHandler	server.py	/^class DateHandler(tornado.web.RequestHandler):$/;"	c
+MainHandler	server.py	/^class MainHandler(tornado.web.RequestHandler):$/;"	c
+Node	parser.py	/^from xml.dom import Node$/;"	i
 SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
 [%	Session.vim	/^vmap [% [%m'gv``$/;"	m
-\b	Session.vim	/^map <buffer> \\b <Plug>JavagetsetInsertBothGetterSetter$/;"	m
-\g	Session.vim	/^map <buffer> \\g <Plug>JavagetsetInsertGetterOnly$/;"	m
-\p	Session.vim	/^map <buffer> \\p <Plug>JavagetsetInsertGetterSetter$/;"	m
-\s	Session.vim	/^map <buffer> \\s <Plug>JavagetsetInsertSetterOnly$/;"	m
 ]%	Session.vim	/^vmap ]% ]%m'gv``$/;"	m
 __init__	download.py	/^    def __init__(self, url):$/;"	m	class:downloader
 a%	Session.vim	/^vmap a% [%v]%$/;"	m
-bean	parser.py	/^class bean:$/;"	c
+application	server.py	/^application = tornado.web.Application([$/;"	v
+bean	bean.py	/^class bean:$/;"	c
+bean	parser.py	/^from bean import bean$/;"	i
+bean	xmlgenerator.py	/^from bean import bean$/;"	i
 clear_data	tests/utiltest.py	/^    def clear_data(self):$/;"	m	class:datebasetest
 clear_data	testutils.py	/^def clear_data():$/;"	f
 connect	dbutils.py	/^def connect():$/;"	f
 contains_in_db	parser.py	/^def contains_in_db(guid):$/;"	f
 convert	converttime.py	/^def convert(t):$/;"	f
+converttime	parser.py	/^import converttime$/;"	i
+converttime	tests/utiltest.py	/^import converttime$/;"	i
 create	db.py	/^def create():$/;"	f
-date	parser.py	/^    date = 0$/;"	v	class:bean
+date	bean.py	/^    date = 0$/;"	v	class:bean
 datebasetest	tests/utiltest.py	/^class datebasetest(unittest.TestCase):$/;"	c
+datetime	converttime.py	/^from datetime import datetime$/;"	i
 datetimetest	tests/utiltest.py	/^class datetimetest(unittest.TestCase):$/;"	c
+dbutils	parser.py	/^import dbutils$/;"	i
+dbutils	tests/utiltest.py	/^import dbutils$/;"	i
+dbutils	testutils.py	/^import dbutils$/;"	i
+dbutils	xmlgenerator.py	/^import dbutils$/;"	i
 download	download.py	/^    def download(self):$/;"	m	class:downloader
 downloader	download.py	/^class downloader:$/;"	c
+downloader	parser.py	/^from download import downloader$/;"	i
+escape	parser.py	/^def escape(s):$/;"	f
 gen_dom	parser.py	/^def gen_dom(url):$/;"	f
+get	server.py	/^    def get(self):$/;"	m	class:DateHandler
+get	server.py	/^    def get(self):$/;"	m	class:MainHandler
 getOutFile	download.py	/^    def getOutFile(self):$/;"	m	class:downloader
 get_item_data	parser.py	/^def get_item_data(t):$/;"	f
-guid	parser.py	/^    guid = ""$/;"	v	class:bean
+guid	bean.py	/^    guid = ""$/;"	v	class:bean
 gx	Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
 hash	parser.py	/^def hash(s):$/;"	f
+hashlib	parser.py	/^import hashlib$/;"	i
 insert_data	tests/utiltest.py	/^    def insert_data(self):$/;"	m	class:datebasetest
 insert_to_db	parser.py	/^def insert_to_db(list):$/;"	f
+ioloop	server.py	/^import tornado.ioloop$/;"	i
+load_beans	xmlgenerator.py	/^def load_beans(date):$/;"	f
+load_single_bean	xmlgenerator.py	/^def load_single_bean(row):$/;"	f
+logging	server.py	/^import logging$/;"	i
 mUrl	download.py	/^    mUrl = ""$/;"	v	class:downloader
 main	parser.py	/^def main():$/;"	f
+options	server.py	/^import tornado.options$/;"	i
+parse	parser.py	/^from xml.dom.minidom import parse$/;"	i
 parseFileName	download.py	/^    def parseFileName(self):$/;"	m	class:downloader
 parse_guid	parser.py	/^def parse_guid(item):$/;"	f
 print_data	testutils.py	/^def print_data():$/;"	f
+query	xmlgenerator.py	/^def query(date):$/;"	f
+re	download.py	/^import re$/;"	i
 read_urls	parser.py	/^def read_urls():$/;"	f
 s:cpo_save	Session.vim	/^let s:cpo_save=&cpo$/;"	v
-s:l	Session.vim	/^let s:l = 8 - ((7 * winheight(0) + 25) \/ 50)$/;"	v
 s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
 s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
 s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
 setUp	tests/utiltest.py	/^    def setUp(self):$/;"	m	class:datebasetest
+sqlite3	db.py	/^import sqlite3$/;"	i
+sqlite3	dbutils.py	/^import sqlite3$/;"	i
+sys	server.py	/^import sys$/;"	i
+sys	tests/utiltest.py	/^import sys$/;"	i
 test_convert	tests/utiltest.py	/^    def test_convert(self):$/;"	m	class:datetimetest
 test_cursor	tests/utiltest.py	/^    def test_cursor(self):$/;"	m	class:datebasetest
 test_date	tests/utiltest.py	/^    def test_date(self):$/;"	m	class:datebasetest
-title	parser.py	/^    title = ""    $/;"	v	class:bean
-zt	Session.vim	/^normal! zt$/;"	m
+testutils	parser.py	/^import testutils$/;"	i
+title	bean.py	/^    title = ""    $/;"	v	class:bean
+tornado	server.py	/^import tornado.ioloop$/;"	i
+tornado	server.py	/^import tornado.options$/;"	i
+tornado	server.py	/^import tornado.web$/;"	i
+unittest	tests/utiltest.py	/^import unittest$/;"	i
+urllib	download.py	/^import urllib$/;"	i
+web	server.py	/^import tornado.web$/;"	i
 ê	Session.vim	/^nmap ê mz:m+$/;"	m
 ê	Session.vim	/^vmap ê :m'>+$/;"	m
 ë	Session.vim	/^nmap ë mz:m-2$/;"	m
