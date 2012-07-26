@@ -106,7 +106,6 @@ $w	Session.vim	/^vnoremap $w `>a"`<i"$/;"	m
 ,z	Session.vim	/^map ,z <Plug>ZoomWin$/;"	m
 0	Session.vim	/^map 0 ^$/;"	m
 0	Session.vim	/^normal! 0$/;"	m
-03l	Session.vim	/^normal! 03l$/;"	m
 <F11>	Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
 <F2>	Session.vim	/^map <F2> :NERDTreeToggle$/;"	m
 <F3>	Session.vim	/^map <F3> :Tlist$/;"	m
@@ -166,30 +165,42 @@ SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
 ]%	Session.vim	/^vmap ]% ]%m'gv``$/;"	m
 __init__	download.py	/^    def __init__(self, url):$/;"	m	class:downloader
 a%	Session.vim	/^vmap a% [%v]%$/;"	m
-body	parser.py	/^body = []$/;"	v
+bean	parser.py	/^class bean:$/;"	c
+clear_data	tests/utiltest.py	/^    def clear_data(self):$/;"	m	class:datebasetest
+clear_data	testutils.py	/^def clear_data():$/;"	f
+connect	dbutils.py	/^def connect():$/;"	f
+contains_in_db	parser.py	/^def contains_in_db(guid):$/;"	f
 convert	converttime.py	/^def convert(t):$/;"	f
 create	db.py	/^def create():$/;"	f
-cursor	dbutils.py	/^def cursor():$/;"	f
+date	parser.py	/^    date = 0$/;"	v	class:bean
 datebasetest	tests/utiltest.py	/^class datebasetest(unittest.TestCase):$/;"	c
 datetimetest	tests/utiltest.py	/^class datetimetest(unittest.TestCase):$/;"	c
-dom	parser.py	/^dom = parse(downloader(url).download())$/;"	v
 download	download.py	/^    def download(self):$/;"	m	class:downloader
 downloader	download.py	/^class downloader:$/;"	c
+gen_dom	parser.py	/^def gen_dom(url):$/;"	f
 getOutFile	download.py	/^    def getOutFile(self):$/;"	m	class:downloader
+get_item_data	parser.py	/^def get_item_data(t):$/;"	f
+guid	parser.py	/^    guid = ""$/;"	v	class:bean
 gx	Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
+hash	parser.py	/^def hash(s):$/;"	f
+insert_data	tests/utiltest.py	/^    def insert_data(self):$/;"	m	class:datebasetest
+insert_to_db	parser.py	/^def insert_to_db(list):$/;"	f
 mUrl	download.py	/^    mUrl = ""$/;"	v	class:downloader
+main	parser.py	/^def main():$/;"	f
 parseFileName	download.py	/^    def parseFileName(self):$/;"	m	class:downloader
+parse_guid	parser.py	/^def parse_guid(item):$/;"	f
+print_data	testutils.py	/^def print_data():$/;"	f
+read_urls	parser.py	/^def read_urls():$/;"	f
 s:cpo_save	Session.vim	/^let s:cpo_save=&cpo$/;"	v
-s:l	Session.vim	/^let s:l = 3 - ((2 * winheight(0) + 12) \/ 25)$/;"	v
-s:l	Session.vim	/^let s:l = 7 - ((6 * winheight(0) + 12) \/ 24)$/;"	v
+s:l	Session.vim	/^let s:l = 8 - ((7 * winheight(0) + 25) \/ 50)$/;"	v
 s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
 s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
 s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
 setUp	tests/utiltest.py	/^    def setUp(self):$/;"	m	class:datebasetest
 test_convert	tests/utiltest.py	/^    def test_convert(self):$/;"	m	class:datetimetest
-test_db	tests/utiltest.py	/^    def test_db(self):$/;"	m	class:datebasetest
-titles	parser.py	/^titles = []$/;"	v
-url	parser.py	/^url = "http:\/\/cn.engadget.com\/rss.xml"$/;"	v
+test_cursor	tests/utiltest.py	/^    def test_cursor(self):$/;"	m	class:datebasetest
+test_date	tests/utiltest.py	/^    def test_date(self):$/;"	m	class:datebasetest
+title	parser.py	/^    title = ""    $/;"	v	class:bean
 zt	Session.vim	/^normal! zt$/;"	m
 ê	Session.vim	/^nmap ê mz:m+$/;"	m
 ê	Session.vim	/^vmap ê :m'>+$/;"	m

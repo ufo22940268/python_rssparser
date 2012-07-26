@@ -1,4 +1,5 @@
 import urllib
+import re
 
 class downloader:
     mUrl = ""
@@ -17,11 +18,11 @@ class downloader:
         return fileName
 
     def getOutFile(self):
-        return open(self.parseFileName(), "w")
+        dir = "rss_repo"
+        return open("rss_repo/" + self.parseFileName(), "w")
 
     def parseFileName(self):
-        return self.mUrl[self.mUrl.rfind("/") + 1:]
-
+        return re.match(".*://([^/]*)/.*", self.mUrl).group(1)
 
 if __name__ == '__main__':
     downloader("http://cn.engadget.com/rss.xml").download()
