@@ -12,7 +12,7 @@ def query(date):
 
 def load_single_bean(row):
     b = bean()
-    b.title = row[1]
+    b.title = row['title']
     return b
 
 def load_beans(date):
@@ -28,9 +28,19 @@ def gen_xml(beans):
     root = ET.Element("data")
     for b in beans:
         item = ET.Element("item")
+
         title = ET.Element("title")
         title.text = b.title
         item.append(title)
+
+        link = ET.Element("link")
+        link.text = b.link
+        item.append(link)
+
+        content = ET.Element("content")
+        content.text = b.content
+        item.append(content)
+
         root.append(item)
 
     return root
@@ -44,4 +54,4 @@ def gen(date):
     return pretty_string(ET.tostring(root))
 
 if __name__ == '__main__':
-    print gen(0)
+    print gen(123)

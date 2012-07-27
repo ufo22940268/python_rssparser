@@ -31,11 +31,11 @@ def escape(s):
     return s.replace("'", "''")
 
 def insert_to_db(list):
-    print [x.guid for x in list]
+    #print [x.guid for x in list]
     conn = dbutils.connect()
     c = conn.cursor()
     for t in list:
-        c.execute("insert into data(title, date, hash_guid) values(?, ?, ?)", (t.title, t.date, t.guid));
+        c.execute("insert into data(title, date, hash_guid, content, link) values(?, ?, ?, ?, ?)", (t.title, t.date, t.guid, t.content, t.link));
     conn.commit()
     c.close()
 
@@ -60,10 +60,14 @@ def main():
                         b.title = item_data
                     elif t.nodeName == "guid":
                         b.guid = hash(item_data)
+                    elif t.nodeName == "description":
+                        b.content = item_data
+                    elif t.nodeName == "link":
+                        b.link = item_data
                 list.append(b)
         insert_to_db(list);
         #test
-        testutils.print_data()
+        #testutils.print_data()
 
 def parse_guid(item):
     return hash(get_item_data(item.getElementsByTagName("guid")[0]))

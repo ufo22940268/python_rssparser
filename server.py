@@ -13,7 +13,7 @@ class MainHandler(tornado.web.RequestHandler):
 class DateHandler(tornado.web.RequestHandler):
     def get(self):
         date = self.get_argument("date")
-        self.write(date)
+        self.write(xmlgenerator.gen(date))
 
 application = tornado.web.Application([
     (r"/", MainHandler),

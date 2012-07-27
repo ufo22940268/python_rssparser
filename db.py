@@ -4,7 +4,7 @@ def create():
     c = conn.cursor()
     c.execute('drop table data')
     c.execute('''CREATE TABLE data
-                (_id INTEGER PRIMARY KEY AUTOINCREMENT, hash_guid INTEGER, title TEXT, date INTEGER)''');
+                (_id INTEGER PRIMARY KEY AUTOINCREMENT, hash_guid INTEGER, title TEXT, date INTEGER, link TEXT, content TEXT)''');
     conn.commit()
     c.close()
 
