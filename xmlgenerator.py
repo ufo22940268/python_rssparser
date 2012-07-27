@@ -1,5 +1,8 @@
 from bean import bean
 import dbutils
+from xml.etree import ElementTree as ET
+import sys
+from xml.dom import minidom
 
 def query(date):
     conn = dbutils.connect()
@@ -19,7 +22,26 @@ def load_beans(date):
     while row != None:
         beans.append(load_single_bean(row))
         row = c.fetchone()
-    return "".join(map(str, beans))
+    return beans
+
+def gen_xml(beans):
+    root = ET.Element("data")
+    for b in beans:
+        item = ET.Element("item")
+        title = ET.Element("title")
+        title.text = b.title
+        item.append(title)
+        root.append(item)
+
+    return root
+
+def pretty_string(str):
+    return minidom.parseString(str).toprettyxml()
+
+def gen(date):
+    beans = load_beans(date)
+    root = gen_xml(beans)
+    return pretty_string(ET.tostring(root))
 
 if __name__ == '__main__':
-    print load_beans(0)
+    print gen(0)

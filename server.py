@@ -4,6 +4,7 @@ import tornado.ioloop
 import tornado.web
 import tornado.options
 import logging
+import xmlgenerator
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -11,7 +12,8 @@ class MainHandler(tornado.web.RequestHandler):
 
 class DateHandler(tornado.web.RequestHandler):
     def get(self):
-        logging.info(self.get_argument("date"))
+        date = self.get_argument("date")
+        self.write(date)
 
 application = tornado.web.Application([
     (r"/", MainHandler),
