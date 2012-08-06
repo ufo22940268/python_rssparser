@@ -1,160 +1,15 @@
-	Session.vim	/^cnoremap  <Home>$/;"	m
-	Session.vim	/^cnoremap  <End>$/;"	m
-		Session.vim	/^inoremap <silent> 	 =TriggerSnippet()$/;"	m
-	Session.vim	/^map   \/$/;"	m
-	Session.vim	/^cnoremap  $/;"	m
-	Session.vim	/^nmap  :JavaBrowser$/;"	m
-		Session.vim	/^inoremap <silent> 	 =ShowAvailableSnips()$/;"	m
-	Session.vim	/^map  :WMToggle$/;"	m
-c	Session.vim	/^nmap c :cs find c =expand("<cword>")$/;"	m
-d	Session.vim	/^nmap d :cs find d =expand("<cword>")$/;"	m
-e	Session.vim	/^nmap e :cs find e =expand("<cword>")$/;"	m
-f	Session.vim	/^nmap f :cs find f =expand("<cfile>")$/;"	m
-g	Session.vim	/^nmap g :cs find g =expand("<cword>")$/;"	m
-i	Session.vim	/^nmap i :cs find i ^=expand("<cfile>")$/;"	m
-s	Session.vim	/^nmap s :cs find s =expand("<cword>")$/;"	m
-t	Session.vim	/^nmap t :cs find t =expand("<cword>")$/;"	m
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-$<	Session.vim	/^vnoremap $< `>a -->`<i<!-- $/;"	m
-$$	Session.vim	/^vnoremap $$ `>a"`<i"$/;"	m
-$/	Session.vim	/^vnoremap $\/ `>a*\/`<i\/*$/;"	m
-$1	Session.vim	/^vnoremap $1 `>a)`<i($/;"	m
-$2	Session.vim	/^vnoremap $2 `>a]`<i[$/;"	m
-$3	Session.vim	/^vnoremap $3 `>a}`<i{$/;"	m
-$q	Session.vim	/^vnoremap $q `>a'`<i'$/;"	m
-$td	Session.vim	/^cnoremap $td tabnew ~\/Desktop\/$/;"	m
-$th	Session.vim	/^cnoremap $th tabnew ~\/$/;"	m
-$w	Session.vim	/^vnoremap $w `>a"`<i"$/;"	m
-,$	Session.vim	/^map ,$ :syntax sync fromstart$/;"	m
-,0	Session.vim	/^nnoremap ,0 :10b$/;"	m
-,1	Session.vim	/^map ,1 :set syntax=cheetah$/;"	m
-,2	Session.vim	/^map ,2 :set syntax=xhtml$/;"	m
-,3	Session.vim	/^nnoremap ,3 :3b$/;"	m
-,3	Session.vim	/^omap ,3 :set syntax=python$/;"	m
-,3	Session.vim	/^vmap ,3 :set syntax=python$/;"	m
-,4	Session.vim	/^nnoremap ,4 :4b$/;"	m
-,4	Session.vim	/^omap ,4 :set ft=javascript$/;"	m
-,4	Session.vim	/^vmap ,4 :set ft=javascript$/;"	m
-,5	Session.vim	/^nnoremap ,5 :5b$/;"	m
-,6	Session.vim	/^nnoremap ,6 :6b$/;"	m
-,7	Session.vim	/^nnoremap ,7 :7b$/;"	m
-,8	Session.vim	/^nnoremap ,8 :8b$/;"	m
-,9	Session.vim	/^nnoremap ,9 :9b$/;"	m
-,ac	Session.vim	/^map ,ac :!adb_connect&&adb logcat -c$/;"	m
-,al	Session.vim	/^map ,al :!adb_connect&&adb logcat$/;"	m
-,b	Session.vim	/^nnoremap <silent> ,b :CommandTBuffer$/;"	m
-,bc	Session.vim	/^noremap <silent> ,bc :!find -name *.java > cscope.files && cscope -b -q$/;"	m
-,cD	Session.vim	/^nmap <silent> ,cD <Plug>VCSDelete$/;"	m
-,cG	Session.vim	/^nmap <silent> ,cG <Plug>VCSClearAndGotoOriginal$/;"	m
-,cL	Session.vim	/^nmap <silent> ,cL <Plug>VCSLock$/;"	m
-,cN	Session.vim	/^nmap <silent> ,cN <Plug>VCSSplitAnnotate$/;"	m
-,cU	Session.vim	/^nmap <silent> ,cU <Plug>VCSUnlock$/;"	m
-,ca	Session.vim	/^nmap <silent> ,ca <Plug>VCSAdd$/;"	m
-,caL	Session.vim	/^nmap ,caL <Plug>CalendarH$/;"	m
-,cal	Session.vim	/^nmap ,cal <Plug>CalendarV$/;"	m
-,cc	Session.vim	/^nmap <silent> ,cc <Plug>VCSCommit$/;"	m
-,cd	Session.vim	/^map ,cd :cd %:p:h$/;"	m
-,cg	Session.vim	/^nmap <silent> ,cg <Plug>VCSGotoOriginal$/;"	m
-,ci	Session.vim	/^nmap <silent> ,ci <Plug>VCSInfo$/;"	m
-,cl	Session.vim	/^nmap <silent> ,cl <Plug>VCSLog$/;"	m
-,cn	Session.vim	/^nmap <silent> ,cn <Plug>VCSAnnotate$/;"	m
-,cq	Session.vim	/^nmap <silent> ,cq <Plug>VCSRevert$/;"	m
-,cr	Session.vim	/^nmap <silent> ,cr <Plug>VCSReview$/;"	m
-,cs	Session.vim	/^nmap <silent> ,cs <Plug>VCSStatus$/;"	m
-,cu	Session.vim	/^nmap <silent> ,cu <Plug>VCSUpdate$/;"	m
-,cv	Session.vim	/^nmap <silent> ,cv <Plug>VCSVimDiff$/;"	m
-,dd	Session.vim	/^noremap ,dd :call StartDebug()$/;"	m
-,di	Session.vim	/^noremap ,di :call DebugInnerContacts()$/;"	m
-,fd	Session.vim	/^nmap ,fd :se ff=dos$/;"	m
-,fu	Session.vim	/^nmap ,fu :se ff=unix$/;"	m
-,m	Session.vim	/^noremap ,m :%s\/\\r\/\/g$/;"	m
-,q	Session.vim	/^map ,q :e ~\/buffer$/;"	m
-,rr	Session.vim	/^nmap ,rr :call ReloadSnippets(snippets_dir, &filetype)$/;"	m
-,s	Session.vim	/^map ,s :so ~\/.vimrc$/;"	m
-,s?	Session.vim	/^map ,s? z=$/;"	m
-,sa	Session.vim	/^map ,sa zg$/;"	m
-,scd	Session.vim	/^nmap ,scd <Plug>SQLUGetColumnDef$/;"	m
-,scdt	Session.vim	/^nmap ,scdt <Plug>SQLUGetColumnDataType$/;"	m
-,scl	Session.vim	/^nmap ,scl <Plug>SQLUCreateColumnList$/;"	m
-,scp	Session.vim	/^nmap ,scp <Plug>SQLUCreateProcedure$/;"	m
-,sf	Session.vim	/^nmap ,sf <Plug>SQLUFormatter$/;"	m
-,sf	Session.vim	/^vmap ,sf <Plug>SQLUFormatter$/;"	m
-,sfr	Session.vim	/^nmap ,sfr <Plug>SQLUFormatStmts$/;"	m
-,sfr	Session.vim	/^vmap ,sfr <Plug>SQLUFormatStmts$/;"	m
-,sfs	Session.vim	/^nmap ,sfs <Plug>SQLUFormatter$/;"	m
-,sfs	Session.vim	/^vmap ,sfs <Plug>SQLUFormatter$/;"	m
-,sn	Session.vim	/^map ,sn ]$/;"	m
-,sp	Session.vim	/^map ,sp [$/;"	m
-,t	Session.vim	/^nnoremap <silent> ,t :CommandT$/;"	m
-,tc	Session.vim	/^noremap ,tc :!adb_connect$/;"	m
-,tr	Session.vim	/^noremap ,tr :!adb_connect&&adb shell stop && adb shell start$/;"	m
-,ts	Session.vim	/^noremap ,ts :!target_sync$/;"	m
-,v	Session.vim	/^map ,v :e ~\/.vimrc$/;"	m
-,vcs	Session.vim	/^noremap ,vcs :e res\/values-zh-rCN\/strings.xml$/;"	m
-,ves	Session.vim	/^noremap ,ves :e res\/values\/strings.xml$/;"	m
-,vjs	Session.vim	/^map ,vjs :sp ~\/.vim\/snippets\/java.snippets$/;"	m
-,vp	Session.vim	/^map <silent> ,vp :!xdg-open %$/;"	m
-,vxs	Session.vim	/^map ,vxs :sp ~\/.vim\/snippets\/xml.snippets$/;"	m
-,w	Session.vim	/^nmap ,w :w!$/;"	m
-,x	Session.vim	/^nmap ,x :xa!$/;"	m
-,y	Session.vim	/^map ,y :YRShow$/;"	m
-,z	Session.vim	/^map ,z <Plug>ZoomWin$/;"	m
-0	Session.vim	/^map 0 ^$/;"	m
-<F11>	Session.vim	/^nnoremap <silent> <F11> :call conque_term#exec_file()$/;"	m
-<F2>	Session.vim	/^map <F2> :NERDTreeToggle$/;"	m
-<F3>	Session.vim	/^map <F3> :Tlist$/;"	m
-<F5>	Session.vim	/^map <silent> <F5> :!ctags -R --exclude=\\.* $/;"	m
-<F9>	Session.vim	/^map <F9> ggVGg?$/;"	m
-<Nul><Nul>c	Session.vim	/^nmap <Nul><Nul>c :vert scs find c =expand("<cword>")$/;"	m
-<Nul><Nul>d	Session.vim	/^nmap <Nul><Nul>d :vert scs find d =expand("<cword>")$/;"	m
-<Nul><Nul>e	Session.vim	/^nmap <Nul><Nul>e :vert scs find e =expand("<cword>")$/;"	m
-<Nul><Nul>f	Session.vim	/^nmap <Nul><Nul>f :vert scs find f =expand("<cfile>")$/;"	m
-<Nul><Nul>g	Session.vim	/^nmap <Nul><Nul>g :vert scs find g =expand("<cword>")$/;"	m
-<Nul><Nul>i	Session.vim	/^nmap <Nul><Nul>i :vert scs find i ^=expand("<cfile>")$/;"	m
-<Nul><Nul>s	Session.vim	/^nmap <Nul><Nul>s :vert scs find s =expand("<cword>")$/;"	m
-<Nul><Nul>t	Session.vim	/^nmap <Nul><Nul>t :vert scs find t =expand("<cword>")$/;"	m
-<Nul>c	Session.vim	/^nmap <Nul>c :scs find c =expand("<cword>")$/;"	m
-<Nul>d	Session.vim	/^nmap <Nul>d :scs find d =expand("<cword>")$/;"	m
-<Nul>e	Session.vim	/^nmap <Nul>e :scs find e =expand("<cword>")$/;"	m
-<Nul>f	Session.vim	/^nmap <Nul>f :scs find f =expand("<cfile>")$/;"	m
-<Nul>g	Session.vim	/^nmap <Nul>g :scs find g =expand("<cword>")$/;"	m
-<Nul>i	Session.vim	/^nmap <Nul>i :scs find i ^=expand("<cfile>")$/;"	m
-<Nul>s	Session.vim	/^nmap <Nul>s :scs find s =expand("<cword>")$/;"	m
-<Nul>t	Session.vim	/^nmap <Nul>t :scs find t =expand("<cword>")$/;"	m
-<Plug>CalendarH	Session.vim	/^nnoremap <silent> <Plug>CalendarH :cal Calendar(1)$/;"	m
-<Plug>CalendarV	Session.vim	/^nnoremap <silent> <Plug>CalendarV :cal Calendar(0)$/;"	m
-<Plug>NetrwBrowseX	Session.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)$/;"	m
-<Plug>VCSAdd	Session.vim	/^nnoremap <silent> <Plug>VCSAdd :VCSAdd$/;"	m
-<Plug>VCSAnnotate	Session.vim	/^nnoremap <silent> <Plug>VCSAnnotate :VCSAnnotate$/;"	m
-<Plug>VCSClearAndGotoOriginal	Session.vim	/^nnoremap <silent> <Plug>VCSClearAndGotoOriginal :VCSGotoOriginal!$/;"	m
-<Plug>VCSCommit	Session.vim	/^nnoremap <silent> <Plug>VCSCommit :VCSCommit$/;"	m
-<Plug>VCSDelete	Session.vim	/^nnoremap <silent> <Plug>VCSDelete :VCSDelete$/;"	m
-<Plug>VCSDiff	Session.vim	/^nnoremap <silent> <Plug>VCSDiff :VCSDiff$/;"	m
-<Plug>VCSGotoOriginal	Session.vim	/^nnoremap <silent> <Plug>VCSGotoOriginal :VCSGotoOriginal$/;"	m
-<Plug>VCSInfo	Session.vim	/^nnoremap <silent> <Plug>VCSInfo :VCSInfo$/;"	m
-<Plug>VCSLock	Session.vim	/^nnoremap <silent> <Plug>VCSLock :VCSLock$/;"	m
-<Plug>VCSLog	Session.vim	/^nnoremap <silent> <Plug>VCSLog :VCSLog$/;"	m
-<Plug>VCSRevert	Session.vim	/^nnoremap <silent> <Plug>VCSRevert :VCSRevert$/;"	m
-<Plug>VCSReview	Session.vim	/^nnoremap <silent> <Plug>VCSReview :VCSReview$/;"	m
-<Plug>VCSSplitAnnotate	Session.vim	/^nnoremap <silent> <Plug>VCSSplitAnnotate :VCSAnnotate!$/;"	m
-<Plug>VCSStatus	Session.vim	/^nnoremap <silent> <Plug>VCSStatus :VCSStatus$/;"	m
-<Plug>VCSUnlock	Session.vim	/^nnoremap <silent> <Plug>VCSUnlock :VCSUnlock$/;"	m
-<Plug>VCSUpdate	Session.vim	/^nnoremap <silent> <Plug>VCSUpdate :VCSUpdate$/;"	m
-<Plug>VCSVimDiff	Session.vim	/^nnoremap <silent> <Plug>VCSVimDiff :VCSVimDiff$/;"	m
-<S-Tab>	Session.vim	/^inoremap <silent> <S-Tab> =BackwardsSnippet()$/;"	m
 DateHandler	server.py	/^class DateHandler(tornado.web.RequestHandler):$/;"	c
+ET	xmlgenerator.py	/^from xml.etree import ElementTree as ET$/;"	i
 MainHandler	server.py	/^class MainHandler(tornado.web.RequestHandler):$/;"	c
 Node	parser.py	/^from xml.dom import Node$/;"	i
-SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
-[%	Session.vim	/^vmap [% [%m'gv``$/;"	m
-]%	Session.vim	/^vmap ]% ]%m'gv``$/;"	m
 __init__	download.py	/^    def __init__(self, url):$/;"	m	class:downloader
-a%	Session.vim	/^vmap a% [%v]%$/;"	m
+__str__	bean.py	/^    def __str__(self):$/;"	m	class:bean	file:
 application	server.py	/^application = tornado.web.Application([$/;"	v
 bean	bean.py	/^class bean:$/;"	c
 bean	parser.py	/^from bean import bean$/;"	i
@@ -163,6 +18,7 @@ clear_data	tests/utiltest.py	/^    def clear_data(self):$/;"	m	class:datebasetes
 clear_data	testutils.py	/^def clear_data():$/;"	f
 connect	dbutils.py	/^def connect():$/;"	f
 contains_in_db	parser.py	/^def contains_in_db(guid):$/;"	f
+content	bean.py	/^    content = ""$/;"	v	class:bean
 convert	converttime.py	/^def convert(t):$/;"	f
 converttime	parser.py	/^import converttime$/;"	i
 converttime	tests/utiltest.py	/^import converttime$/;"	i
@@ -179,40 +35,42 @@ download	download.py	/^    def download(self):$/;"	m	class:downloader
 downloader	download.py	/^class downloader:$/;"	c
 downloader	parser.py	/^from download import downloader$/;"	i
 escape	parser.py	/^def escape(s):$/;"	f
+gen	xmlgenerator.py	/^def gen(date):$/;"	f
 gen_dom	parser.py	/^def gen_dom(url):$/;"	f
+gen_xml	xmlgenerator.py	/^def gen_xml(beans):$/;"	f
 get	server.py	/^    def get(self):$/;"	m	class:DateHandler
 get	server.py	/^    def get(self):$/;"	m	class:MainHandler
 getOutFile	download.py	/^    def getOutFile(self):$/;"	m	class:downloader
 get_item_data	parser.py	/^def get_item_data(t):$/;"	f
 guid	bean.py	/^    guid = ""$/;"	v	class:bean
-gx	Session.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
 hash	parser.py	/^def hash(s):$/;"	f
 hashlib	parser.py	/^import hashlib$/;"	i
 insert_data	tests/utiltest.py	/^    def insert_data(self):$/;"	m	class:datebasetest
 insert_to_db	parser.py	/^def insert_to_db(list):$/;"	f
 ioloop	server.py	/^import tornado.ioloop$/;"	i
+link	bean.py	/^    link = ""$/;"	v	class:bean
 load_beans	xmlgenerator.py	/^def load_beans(date):$/;"	f
 load_single_bean	xmlgenerator.py	/^def load_single_bean(row):$/;"	f
 logging	server.py	/^import logging$/;"	i
 mUrl	download.py	/^    mUrl = ""$/;"	v	class:downloader
 main	parser.py	/^def main():$/;"	f
+minidom	test.py	/^from xml.dom import minidom$/;"	i
+minidom	xmlgenerator.py	/^from xml.dom import minidom$/;"	i
 options	server.py	/^import tornado.options$/;"	i
 parse	parser.py	/^from xml.dom.minidom import parse$/;"	i
 parseFileName	download.py	/^    def parseFileName(self):$/;"	m	class:downloader
 parse_guid	parser.py	/^def parse_guid(item):$/;"	f
+pretty_string	xmlgenerator.py	/^def pretty_string(str):$/;"	f
 print_data	testutils.py	/^def print_data():$/;"	f
 query	xmlgenerator.py	/^def query(date):$/;"	f
 re	download.py	/^import re$/;"	i
 read_urls	parser.py	/^def read_urls():$/;"	f
-s:cpo_save	Session.vim	/^let s:cpo_save=&cpo$/;"	v
-s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
-s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
-s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
 setUp	tests/utiltest.py	/^    def setUp(self):$/;"	m	class:datebasetest
 sqlite3	db.py	/^import sqlite3$/;"	i
 sqlite3	dbutils.py	/^import sqlite3$/;"	i
 sys	server.py	/^import sys$/;"	i
 sys	tests/utiltest.py	/^import sys$/;"	i
+sys	xmlgenerator.py	/^import sys$/;"	i
 test_convert	tests/utiltest.py	/^    def test_convert(self):$/;"	m	class:datetimetest
 test_cursor	tests/utiltest.py	/^    def test_cursor(self):$/;"	m	class:datebasetest
 test_date	tests/utiltest.py	/^    def test_date(self):$/;"	m	class:datebasetest
@@ -224,7 +82,5 @@ tornado	server.py	/^import tornado.web$/;"	i
 unittest	tests/utiltest.py	/^import unittest$/;"	i
 urllib	download.py	/^import urllib$/;"	i
 web	server.py	/^import tornado.web$/;"	i
-ê	Session.vim	/^nmap ê mz:m+$/;"	m
-ê	Session.vim	/^vmap ê :m'>+$/;"	m
-ë	Session.vim	/^nmap ë mz:m-2$/;"	m
-ë	Session.vim	/^vmap ë :m'<-2$/;"	m
+xml	test.py	/^xml = minidom.parse("test.xml")$/;"	v
+xmlgenerator	server.py	/^import xmlgenerator$/;"	i
